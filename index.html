@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flying Bird</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat";
+        background: linear-gradient(
+          180deg,
+          #bdbcd2 0%,
+          rgba(189, 188, 210, 0.359375) 64.06%,
+          rgba(189, 188, 210, 0) 100%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #45170e;
+      }
+      h2 {
+        text-align: center;
+        color: #45170e;
+        text-transform: lowercase;
+        opacity: 0.7;
+      }
+      h5 {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        color: #45170e;
+        border: #45170e 1px solid;
+        border-radius: 5%;
+        width: 500px;
+        margin-bottom: 20px;
+        font-weight: lighter;
+      }
+      p {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        color: #45170e;
+        width: 500px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 15%;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #996867;
+        border-radius: 5%;
+        color: #3aa5e2;
+        transition: all 200ms ease-in-out;
+        box-shadow: 0 1px 20px rgb(0 0 0 / 50%);
+      }
+      button:hover {
+        cursor: pointer;
+        color: black;
+        background-color: #bdbcd2;
+        border: 1px solid #45170e;
+        font-weight: bolder;
+      }
+      .coder {
+        text-align: center;
+        color: #45170e;
+        font-weight: lighter;
+        margin-top: 10px;
+        opacity: 0.5;
+        font-weight: 50;
+        font-size: small;
+      }
+
+      .learn-more {
+        color: #3d140d;
+        display: block;
+        text-decoration: underline;
+        margin-top: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5%;
+      }
+      .email {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        color: #3aa5e2;
+        font-size: small;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>If you love to travel ✈️</h1>
+      <h2>And brave enough to fly around the world</h2>
+      <h5>
+        Then <em><strong>Flying Bird</strong></em> will help you to follow your
+        dream and share some secrets how to make flying your profession. <br />
+        She will lead you through the way of becoming a cabin crew in the most
+        respectful airlines in the Middle East.
+      </h5>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/692/original/The_best_careers_for_travelling_the_world_-_Lonely_Planet.jpeg?1674234155"
+        alt="crew"
+        width="500px"
+      />
+      <br />
+      <a
+        href="https://www.aeronefs.com/blogs/become-a-cabin-crew-in-the-middle-east-airline/"
+        target="_blank"
+        class="learn-more"
+        >Here you can learn more</a
+      >
+      <p>
+        <em>
+          Today you can download free tutorial with detailed instraction how to
+          pass the interview with 5 Star Middle East Airlines. <br />
+          This guidelines will open for you world of new opportunities which you
+          never knew about.
+        </em>
+      </p>
+      <button><b> Get tutorial</b></button>
+      <div class="coder">This page was built by Oksana Sydorenko</div>
+      <a class="email" href="mailto:sidorenkooks9@gmail.com">Email Oksana 📧</a>
+
+      <script>
+        function getTutorial() {
+          let name = prompt("What is your name?");
+          let contact = prompt("What is your e-mail?");
+          if (contact.indexOf("@") === -1) {
+            alert("Your e-mail is not correct");
+          } else {
+            alert(
+              "Congratulation, " +
+                name +
+                " you will receive an e-mail with free tutorial in 5 min ⏲️"
+            );
+          }
+        }
+
+        let getTutorialButton = document.querySelector("button");
+        getTutorialButton.addEventListener("click", getTutorial);
+      </script>
+    </div>
+  </body>
+</html>
