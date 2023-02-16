@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+.our-people-container {
+    background-color: var(--light-background-color);
+  }
+  .our-people-subtitle {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.carousel-container {
+    position: relative;
+  }
+  
+.carousel-card {
+    display: none;
+  }
+.carousel {
+    display: flex;
+  }
+.carousel-card.active {
+    display: block;
+  }
+.carousel-card-image {
+    object-fit: cover;
+    width: 242px;
+    height: 180px;
+    object-position: 65% 35%;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    opacity: 0.7;
+    align-items: center;
+    display: flex;
+  }
+.carousel-card-title {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Varela Round", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+  }
+.carousel-card-description {
+    font-size: 16px;
+    text-align: left;
+    font-family: "Varela Round", sans-serif;
+  }
+.carousel {
+    position: relative;
+    width: 100%;
+ }
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    font-size: 24px;
+    font-family: "Varela Round", sans-serif;
+    cursor: pointer;
+ }
+.carousel-button-prev {
+    top: 150px;
+    left: 20%;
+ }
+.carousel-button-next {
+    top: 150px;
+    right: 20%;
+ }
