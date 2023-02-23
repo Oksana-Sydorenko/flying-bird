@@ -32,10 +32,6 @@
     margin: auto;
 }
 
-img {
-    display: block;
-    width: 100%;
-}
 
 h2 {
     font-family: "Montserrat", sans-serif;
@@ -50,73 +46,71 @@ h2 {
 .our-people-container {
     background-color: var(--light-background-color);
   }
-  .our-people-subtitle {
-    text-align: center;
-    font-family: "Varela Round", sans-serif;
-    font-size: 20px;
-    box-sizing: border-box;
-    color: var(--text-color);
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.carousel-container {
-    position: relative;
-  }
-  
-.carousel-card {
-    display: none;
-  }
-.carousel {
-    display: flex;
-  }
-.carousel-card.active {
-    display: block;
-  }
-.carousel-card-image {
-    object-fit: cover;
-    width: 242px;
-    height: 180px;
-    object-position: 65% 35%;
-    border-radius: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-    opacity: 0.7;
-    align-items: center;
-    display: flex;
-  }
-.carousel-card-title {
+  .our-people-carousel__cards h3 {
     font-size: 20px;
     line-height: 30px;
-    font-family: "Varela Round", sans-serif;
+    font-family: "Varela Round";
     font-style: normal;
     font-weight: 400;
+    text-align: left;
   }
-.carousel-card-description {
+
+  .our-people-carousel__cards p {
     font-size: 16px;
     text-align: left;
-    font-family: "Varela Round", sans-serif;
+    font-family: "Varela Round";
   }
-.carousel {
-    position: relative;
-    width: 100%;
- }
-.carousel-button {
+  .carousel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     border: none;
     background-color: transparent;
-    color: var(--text-color);
+    color: #567491;
     font-size: 24px;
-    font-family: "Varela Round", sans-serif;
+    font-family: "Varela Round";
     cursor: pointer;
- }
-.carousel-button-prev {
-    top: 150px;
-    left: 20%;
- }
-.carousel-button-next {
-    top: 150px;
-    right: 20%;
- }
+    justify-content: space-evenly;
+  }
+  .our-people-carousel-button-prev {
+    top: 300px;
+    left: 0;
+  }
+
+  .our-people-carousel-button-next {
+    top: 300px;
+    right: 0;
+  }
+  .our-people-carousel__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; 
+    overflow: hidden;
+  }
+
+  .our-people-carousel__cards div {
+    width: calc(
+      100% / 3
+    ); 
+    padding: 0 10px;
+    text-align: center;
+    transition: all 0.3s ease; 
+  }
+
+  .our-people-carousel__cards div img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    background: rgba(0, 95, 183, 0.34);
+    opacity: 0.7;
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* Change the card width to 100% for screens smaller than 768px */
+    .our-people-carousel__cards div {
+      width: 100%;
+    }
+  }
